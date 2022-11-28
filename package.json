@@ -1,0 +1,9 @@
+{
+    "name": "my-test",
+    "main": "exe.js",
+    "type": "module",
+    "scripts": {
+      "dev": "node exe.js"
+    }
+  }
+  

@@ -2,15 +2,6 @@
 import fs from 'fs';
 
 
-function parseCsv(file) {
-    const lines = file.split("\r\n");
-    for (let i = 0; i < lines.length; i++) {
-        lines[i] = lines[i].split(",");
-    }
-
-    return lines;
-
-}
 
 function writeFiles(array) {
     for (let i = 0; i < array.length; i++) {
@@ -23,6 +14,17 @@ function writeFiles(array) {
             console.log("The file was saved successfully!");
         });
     }
+}
+
+
+function parseCsv(file) {
+    const lines = file.split("\r\n");
+    for (let i = 0; i < lines.length; i++) {
+        lines[i] = lines[i].split(",");
+    }
+
+    return lines;
+
 }
 
 function createFiles(dataFile) {
